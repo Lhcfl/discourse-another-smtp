@@ -1,0 +1,20 @@
+plugins:
+  discourse_another_email_enabled:
+    default: false
+  discourse_another_email_enabling_mails:
+    default: "outlook.com"
+    type: list
+  discourse_another_email_smtp_authentication_mode: 
+    default: "plain"
+  discourse_another_email_smtp_address:
+    default: "172.17.0.1"
+  discourse_another_email_smtp_port:
+    default: 587
+    min: 0
+    max: 65537
+  discourse_another_email_smtp_username:
+    default: "username@example.com"
+  discourse_another_email_smtp_password:
+    default: "password"
+    secret: true
+  

@@ -1,0 +1,9 @@
+en:
+  site_settings:
+    discourse_another_email_enabled: "Enable another smtp server for special email addresses"
+    discourse_another_email_smtp_authentication_mode: "smtp_authentication_mode"
+    discourse_another_email_enabling_mails: "Email domains that use the other smtp server"
+    discourse_another_email_smtp_address: "another_email_smtp_address"
+    discourse_another_email_smtp_port: another_email_smtp_port
+    discourse_another_email_smtp_username: another_email_smtp_username
+    discourse_another_email_smtp_password: another_email_smtp_password
