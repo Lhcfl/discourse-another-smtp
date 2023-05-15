@@ -18,15 +18,18 @@ after_initialize do
       message, type = *params
 
       receiver_in_list = false
+      allow_maillist = false
       
       message&.to&.each do |address|
-        puts address
         SiteSetting.discourse_another_email_enabling_mails.split('|').each do |addr|
           receiver_in_list = true if address.include? addr
         end
+        SiteSetting.discourse_another_email_maillist_allowing_emails.split('|').each do |addr|
+          allow_maillist = true if address.include? addr
+        end
       end
 
-      if receiver_in_list
+      if receiver_in_list and (type != :mailing_list or allow_maillist)
         message.delivery_method.settings[:authentication] = SiteSetting.discourse_another_email_smtp_authentication_mode
         message.delivery_method.settings[:address] = SiteSetting.discourse_another_email_smtp_address
         message.delivery_method.settings[:port] = SiteSetting.discourse_another_email_smtp_port

@@ -4,6 +4,9 @@ plugins:
   discourse_another_email_enabling_mails:
     default: "outlook.com"
     type: list
+  discourse_another_email_maillist_allowing_emails:
+    default: "admin@example.com"
+    type: list
   discourse_another_email_smtp_authentication_mode: 
     default: "plain"
   discourse_another_email_smtp_address:

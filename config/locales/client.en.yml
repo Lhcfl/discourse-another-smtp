@@ -6,4 +6,5 @@ en:
     discourse_another_email_smtp_address: "another_email_smtp_address"
     discourse_another_email_smtp_port: another_email_smtp_port
     discourse_another_email_smtp_username: another_email_smtp_username
-    discourse_another_email_smtp_password: another_email_smtp_password
+    discourse_another_email_smtp_password: 
+    discourse_another_email_maillist_allowing_emails: which emails are allowed in maillist mode?
